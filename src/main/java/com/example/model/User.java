@@ -15,11 +15,14 @@ public class User {   //  этот класс описывает как выгл
     }
 
 
-    public User(Long id, String name, String lastName, Byte age) {
+    public User(Long id, String name, String lastName, Byte age) { //  конструктор для Hibernate   для User user
         this.id = id;
         this.name = name;
         this.lastName = lastName;
         this.age = age;
+    }
+
+    public User(String name, String lastName, byte age) {
     }
 
     public Long getId() {
